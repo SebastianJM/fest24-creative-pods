@@ -11,14 +11,20 @@ function Form() {
     const navigate = useNavigate();
 
     function finishAction() {
-        navigate('/');
+        navigate('/final');
     }
 
     return (
-        <div style={{width: "100vw", height: "100vh", backgroundColor: "#C757FF"}}>
+        <div style={{width: "100vw", height: "100vh", backgroundColor: "#C757FF", overflow: "hidden"}}>
             <div className="ribon">
                 <div className="ribon-text">
-                    Tu arte se exhibirá en la pantalla grande        
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;Tu arte se exhibirá en la pantalla grande&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
             <img src={background} style={{width: "100vw", height: "100vh", position: "absolute"}} />
@@ -32,10 +38,10 @@ function Form() {
                 
                 <div style={{height: "100%", width: "50%", marginLeft: "100px", alignItems: "center", display: "flex", flexDirection: "column"}}>
                     <img src={resultTitle} style={{width: "auto", height: "15%", marginTop: "10%"}} />
-                    <QRCode value={result} size="1024" className="border-base" style={{ height: "35%", width: "auto", marginTop: "10%"}}/>
-                    <button type="button" className='button-base border-base' style={{width: "40%", height: "60px", fontSize: "30px", marginTop: "10%", maxWidth: "500px"}}
+                    <QRCode value={result} size="1024" className="border-base" style={{ height: "35%", width: "auto", marginTop: "10%", padding: "10px", backgroundColor: "white"}}/>
+                    <button type="button" className='button-base border-base' style={{width: "12vw", fontSize: "30px", marginTop: "10%", maxWidth: "500px"}}
                         onClick={finishAction} >
-                            <span className="button-text"> TERMINAR </span>
+                            <span className="button-text"><b>TERMINAR </b></span>
                             <span className="button-arrow"> → </span>     
                     </button>
                 </div>

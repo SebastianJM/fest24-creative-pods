@@ -53,26 +53,26 @@ function Form() {
   return (
     <div className="falling-rounded-page">   
         <div style={{width: "100vw", height: "100vh"}}>
-          <div className="description" style={{ position: "relative", width: "50vw", left: "25vw", height: "80vh", top: "7vh", alignItems: "center", justifyContent: "center", display: "flex", flexDirection: "column"}}>
+          <div className="description" style={{ position: "relative", width: "50vw", left: "25vw", height: "80vh", top: "8vh", alignItems: "center", justifyContent: "center", display: "flex", flexDirection: "column"}}>
             <Modal 
                 isOpen={showModal}      
                 style={modalCustomStyle}
+                overlayClassName="Overlay"
               >
                 <div className="box-container">
-                <div className="box-header">
-                    <span className="box-header-text">CREATIVE PROMPTING</span>
-                    <button className="box-close-button" >x</button>
-                </div>
-                <div className="box-content">
-                    <span className="box-content-text">Creando arte...</span>
-                    <button className="box-content-percentage" >{progress}%</button>
-                </div>
-                <div className="progress-container">
+                  <div className="box-header">
+                      <span className="box-header-text"><b>CREATIVE PROMPTING</b></span>
+                  </div>
+                  <div className="box-content">
+                      <span className="box-content-text"><b>Creando arte...</b></span>
+                      <span className="box-content-percentage"><b>{progress}%</b></span>
+                  </div>
+                  <div className="progress-container">
                   <div className="progress-bar" style={{ width: `${progress}%` }}>
 
                   </div>
                 </div>
-                <div  className="box-footer">Eres {artista}. Crea una pintura de un {animal} que es {color} y está {emocion}</div>
+                <div  className="box-footer"><b>Eres {artista}. Crea una pintura de un {animal} que es {color} y está {emocion}</b></div>
       
                 </div>   
             </Modal>
@@ -103,7 +103,7 @@ function Form() {
               </div>
             </div> 
                                                                                                           
-            <button type="button" className='button-base border-base' disabled={isButtonDisabled} style={{width: "40%", height: "60px", fontSize: "30px", marginTop: "80px", paddingTop: "40px", maxWidth: "500px"}}
+            <button type="button" className='button-base border-base' disabled={isButtonDisabled} style={{width: "12vw", fontSize: "30px", marginTop: "80px", paddingTop: "40px", maxWidth: "500px"}}
               onClick={fetchResult} >
               <span className="button-text">ENVIAR</span>
               <span className="button-arrow"> → </span>

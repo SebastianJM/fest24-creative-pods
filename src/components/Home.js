@@ -17,9 +17,9 @@ function Home() {
       <div className="description" style={{width: "50vw", height: "100vh", paddingRight: "20px", position: "relative"}}>
         <div style={{width: "87%", marginTop: "13vh", alignItems: "center", display: "flex", flexDirection: "column"}}>
           <img src={logo} style={{width: "100%", height: "auto", maxHeight: "57vh"}} />
-          <p style={{fontSize: "34px", textAlign: "center", fontWeight: "normal", marginTop: "7vh"}}><b>!Desata tu creatividad y prepárate para las risas mientras añades palabras al azar para formar historias sorprendentes e hilarantes!</b></p>
+          <p style={{fontSize: "34px", textAlign: "center", fontWeight: "normal", marginTop: "7vh"}}><b>¡Desata tu creatividad y prepárate para las risas mientras añades palabras al azar para formar historias sorprendentes e hilarantes!</b></p>
           <Link to="/form" style={{width: "40%"}}>
-            <button type="button" className='button-base border-base' style={{width: "100%", height: "60px", fontSize: "30px", marginTop: "4vh"}}>
+            <button type="button" className='button-base border-base' style={{width: "12vw", fontSize: "30px", marginTop: "4vh", marginLeft: "2vw"}}>
               <span className="button-text"> COMENZAR </span>
               <span className="button-arrow"> → </span>
             </button>

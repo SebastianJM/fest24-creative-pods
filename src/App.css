@@ -5,6 +5,20 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Garaje0504";
+  src: local("Garaje 0504 VAR"),
+   url("./fonts/Garaje0504.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Garaje0603";
+  src: local("Garaje 0603 VAR"),
+   url("./fonts/Garaje0603.ttf") format("truetype");
+  font-weight: 900;
+}
+
 .app {
   transition: opacity 0.5s ease-in-out;
 }
@@ -21,12 +35,12 @@
 .button-base {
   background-color: #8EEE00;
   padding: 10px;
-  font-family: "Garaje-0703";
-  font-weight: bold;
+  font-family: "Garaje0603";
 
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  height: 80px;
 }
 
 .button-base:hover{
@@ -37,15 +51,15 @@
 
 .border-base {
   border: 2px solid;
-  border-bottom: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
+  border-bottom: 7px solid;
+  border-right: 7px solid;
+  border-radius: 7px;
 }
 
 .button-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   transition: top 0.3s;
 }
@@ -53,12 +67,16 @@
 .button-arrow {
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 80%;
   transform: translate(-50%, -50%);
   transition: top 0.3s;
 }
 
 .button-base:hover .button-text{
+  animation: fallAndReturn 0.5s forwards;
+}
+
+.button-base:hover .button-arrow {
   animation: fallAndReturn 0.5s forwards;
 }
 
